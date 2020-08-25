@@ -13,53 +13,72 @@
 	</head>
 	<body>
 		<div class="sign-in-nav">
-			<p>Already have an Intuit account?</p>
-			<a href="#">I forgot my User Id or Password</a>
+			<div class="sign-in-container">
+				<p>Already have an Intuit account?</p>
+				<a href="#">I forgot my User Id or Password</a>
+			</div>
 			<button>
 				<i class="fas fa-lock"></i>
 				<p>Sign In</p>
 			</button>
 		</div>
 
-		<header>
+		<header class="main-header">
 			<h1>Intuit</h1>
 		</header>
 
 		<div class="products-list">
 			<ul>
 				<li class="product">
-					<i class="fas fa-leaf"></i>
-					<h2 class="product-name">mint</h2>
+					<a href="#" class="no-color-links">
+						<i class="fas fa-leaf"></i>
+						<h3 class="product-name">mint</h3>
+					</a>
 				</li>
 				<li class="product">
-					<i class="fas fa-book-open"></i>
-					<h2 class="product-name">quickbooks</h2>
+					<a href="#" class="no-color-links">
+						<i class="fas fa-book-open"></i>
+						<h3 class="product-name">quickbooks</h3>
+					</a>
 				</li>
 				<li class="product">
-					<i class="fas fa-check-circle"></i>
-					<h2 class="product-name">turbotax</h2>
+					<a href="#" class="no-color-links">
+						<i class="fas fa-check-circle"></i>
+						<h3 class="product-name">turbotax</h3>
+					</a>
 				</li>
 			</ul>
 		</div>
 
 		<div class="main-container">
 			<header>
-				<h3>Create an Intuit Account</h3>
-				<p>One account for everything Intuit, including Mint.</p>
-				<a href="#">Learn more</a>
+				<h2>Create an Intuit Account</h2>
+				<p class="mint-plug">
+					One account for everything Intuit, including Mint.
+				</p>
+				<a href="#"><p class="mint-link">Learn more</p></a>
 			</header>
-			<form>
-				<label for="email-address">Email address</label>
-				<input type="email" requried />
 
-				<label for="phone">Phone (recommended)</label>
-				<input type="tel" />
-				<aside>Standard call, messaging or data rates may apply.</aside>
+			<form class="sign-up-form">
+				<div class="form-container">
+					<label for="email-address">Email address</label>
+					<input type="email" requried />
+				</div>
 
-				<label for="password">Password</label>
-				<input type="password" required />
+				<div class="form-container">
+					<label for="phone">Phone (recommended)</label>
+					<input type="tel" />
+					<aside>
+						Standard call, messaging or data rates may apply.
+					</aside>
+				</div>
 
-				<button>
+				<div class="form-container">
+					<label for="password">Password</label>
+					<input type="password" required />
+				</div>
+
+				<button class="submit-button">
 					<i class="fas fa-lock"></i>
 					<p>Create Account</p>
 				</button>
@@ -82,16 +101,16 @@
 			</section>
 		</div>
 
-		<footer>
+		<footer class="main-footer">
 			<ul>
 				<li>
-					<a href="#">Legal</a>
+					<a href="#" class="no-color-links">Legal</a>
 				</li>
 				<li>
-					<a href="#">Privacy</a>
+					<a href="#" class="no-color-links">Privacy</a>
 				</li>
 				<li>
-					<a href="#">Security</a>
+					<a href="#" class="no-color-links">Security</a>
 				</li>
 			</ul>
 
@@ -100,7 +119,10 @@
 				TurboTax, ProConnect and Mint are registered trademarks of
 				Intuit Inc.
 			</p>
-			<p>Terms and conditions, features,</p>
+			<p>
+				Terms and conditions, features, support, pricing, and service
+				options subject to change without notice.
+			</p>
 		</footer>
 	</body>
 </html>
