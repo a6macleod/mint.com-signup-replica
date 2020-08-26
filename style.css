@@ -93,6 +93,12 @@ button {
 	max-width: 400px;
 }
 
+@media (max-width: 1000px) {
+	.main-container {
+		max-width: 600px;
+	}
+}
+
 .main-container > * {
 	text-align: center;
 }
@@ -102,7 +108,7 @@ button {
 }
 
 .main-container .mint-plug {
-	padding-bottom: 3px;
+	padding: 0 10px 3px 10px;
 }
 
 .main-container .mint-link {
